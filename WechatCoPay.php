@@ -338,12 +338,12 @@ class WechatCoPay {
  */
 
 $wechat = new WechatCoPay(
-							'wxc9e5c38ea516e924',//绑定支付的APPID
-							'1249048301',//商户号
-							'cascwefweoi943j09j09fj4f4sh3',//商户支付密钥
-							'/data/www/web/app/libraries/wxpay/cert/apiclient_cert.pem',//证书路径
-							'/data/www/web/app/libraries/wxpay/cert/apiclient_key.pem'//证书路径
-						 );
+		           'wxc9e5c38ea516e924',//绑定支付的APPID
+			   '1249048301',//商户号
+			   'cascwefweoi943j09j09fj4f4sh3',//商户支付密钥
+		           '/data/www/web/app/libraries/wxpay/cert/apiclient_cert.pem',//证书路径
+			   '/data/www/web/app/libraries/wxpay/cert/apiclient_key.pem'//证书路径
+		          );
 
 //企业支付
 //具体参数请查看：https://pay.weixin.qq.com/wiki/doc/api/mch_pay.php?chapter=14_2
@@ -359,5 +359,12 @@ print_r($result);
 
 //企业支付查询
 //具体参数请查看：https://pay.weixin.qq.com/wiki/doc/api/mch_pay.php?chapter=14_3
+$wechat = new WechatCoPay(
+		           'wxc9e5c38ea516e924',//绑定支付的APPID
+			   '1249048301',//商户号
+			   'cascwefweoi943j09j09fj4f4sh3',//商户支付密钥
+		           '/data/www/web/app/libraries/wxpay/cert/apiclient_cert.pem',//证书路径
+			   '/data/www/web/app/libraries/wxpay/cert/apiclient_key.pem'//证书路径
+		          );
 $result = $wechat->query('10000098201411111234567890');
 print_r($result);
