@@ -75,6 +75,14 @@ class WechatCoPay {
 		$this->values[$key] = $val;
 	}
 
+	
+	/**
+	 * @return array
+	 */
+	public function getAttributes() {
+		return $this->values;
+	}	
+
 
 	/**
 	 * curl代理设置
